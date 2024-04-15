@@ -13,8 +13,10 @@
     "start": "cross-env NODE_ENV=production node ./build/server.js"
   },
   "dependencies": {
+    "@libsql/client": "^0.6.0",
     "@portabletext/react": "^1.0.6",
-    "@prisma/client": "4.5.0",
+    "@prisma/adapter-libsql": "^5.12.1",
+    "@prisma/client": "5.12.1",
     "@remix-run/express": "^1.7.6",
     "@remix-run/node": "^1.7.2",
     "@remix-run/react": "^1.7.2",
@@ -45,10 +47,11 @@
     "@types/react-syntax-highlighter": "^15.5.5",
     "autoprefixer": "^10.4.12",
     "concurrently": "^7.4.0",
+    "dotenv-cli": "^7.4.1",
     "eslint": "^8.23.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.18",
-    "prisma": "4.5.0",
+    "prisma": "5.12.1",
     "tailwindcss": "^3.1.8",
     "typescript": "^4.7.4"
   },

@@ -1,12 +1,11 @@
 datasource db {
-  url          = env("DATABASE_URL")
-  provider     = "mysql"
-  relationMode = "prisma"
+  url      = "file:./dev.db"
+  provider = "sqlite"
 }
 
-generator js {
+generator client {
   provider        = "prisma-client-js"
-  previewFeatures = ["referentialIntegrity"]
+  previewFeatures = ["driverAdapters"]
 }
 
 model SlottedPostCounter {
